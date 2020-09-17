@@ -17,3 +17,6 @@
 * Microsoft Team: 
 * Git Repository: https://github.com/HangYang/BITassignmentpart2
 * AWS: 
+
+## Code documentation:
+[Quick Start](/docs) in `docs` folder
