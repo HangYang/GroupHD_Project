@@ -1,5 +1,5 @@
   body {
-     background: green;
+     background: grey;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -33,7 +33,7 @@
   }
 
   #s-canvas{
-    background: green;
+    background: transparent;
     border: none;
   }
 
@@ -152,6 +152,12 @@
       overflow: auto;
   }
 
+  .w-head{
+      margin: 0.2em;
+      display: flex;
+      justify-content: space-between;
+  }
+
   .w-close-x{
       color : #ccc;
       text-align: right;
@@ -169,7 +175,7 @@
       display: flex;
       justify-content: center;
       min-height: 10.5em;
-      min-width: 11em;
+      min-width: 16em;
       border-top: 1px solid rgb(31, 31, 31);
       background-color: #11365f;
   }
@@ -194,4 +200,25 @@
       margin: 5px 0;
       padding: 15px;
       border : 1px solid #999;
+  }
+
+  #cont-table{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 18em;
+      margin-bottom: 10px;
+  }
+
+  table {
+      margin: 1.5em;
+  }
+
+  th {
+      color : rgb(238, 190, 102);
+  }
+
+  th, td {
+      text-align: center;
+      width : 6em;
   }

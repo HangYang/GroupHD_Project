@@ -194,8 +194,10 @@ let tetromino = getNextTetromino();
 let rAF = null;  // keep track of the animation frame so we can cancel it
 let gameOver = false;
 
+
 // game loop
 function loop() {
+
   rAF = requestAnimationFrame(loop);
   context.clearRect(0,0,canvas.width,canvas.height);
 
@@ -280,4 +282,17 @@ document.addEventListener('keydown', function(e) {
 });
 
 // start the game
-rAF = requestAnimationFrame(loop);
+var startBtn = false;
+var resetBtn = false;
+function startLoop(){
+  clkBool = true;
+  rAF = requestAnimationFrame(loop);
+}
+
+function reset(){
+  resetBtn = true;
+  if (resetBtn = true){
+    alert("Are You Sure to Reset?");
+    window.location.reload();
+  }
+}
